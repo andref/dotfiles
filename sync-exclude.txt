@@ -1,6 +1,7 @@
 .git/
 .DS_Store/
-rsync-exclude.txt
 bootstrap.sh
 brew.sh
 README.md
+sync-exclude.txt
+sync.sh
