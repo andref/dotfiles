@@ -5,6 +5,9 @@ brew update
 brew upgrade
 
 # Install the stuff.
+brew install autoenv
+brew install bash-completion
 brew install git
-brew install maven
+brew install git-flow
 brew install grails
+brew install maven
