@@ -22,3 +22,9 @@ export MANPAGER="less -X"
 # Always enable colored `grep` output
 export GREP_OPTIONS="--color=auto"
 
+# GO
+
+if [[ -d "${HOME}/go" ]]; then
+    export GOPATH="${HOME}/go"
+fi
+
