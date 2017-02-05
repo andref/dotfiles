@@ -39,9 +39,26 @@
 
 [user]
 
-    name = André Fillipe de Oliveira e Silva
+    name = André Fillipe
     email = andre@filli.pe
 
 [credential]
 
     helper = osxkeychain
+
+[diff]
+
+    tool = diffmerge
+
+[difftool "diffmerge"]
+
+    cmd = $HOME/Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
+
+[merge]
+
+    tool = diffmerge
+
+[mergetool "diffmerge"]
+
+    cmd = "$HOME/Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
+    trustExitCode = true

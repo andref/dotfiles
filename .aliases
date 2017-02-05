@@ -26,6 +26,10 @@ alias sudo='sudo '
 
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
+# DiffMerge
+
+alias diffmerge="/Users/andre/Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash"
+
 #
 #  LS, UM SHOW À PARTE.
 #

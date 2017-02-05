@@ -1,11 +1,18 @@
-#  _               _                          __ _ _      
-# | |             | |                        / _(_) |     
-# | |__   __ _ ___| |__      _ __  _ __ ___ | |_ _| | ___ 
+#  _               _                          __ _ _
+# | |             | |                        / _(_) |
+# | |__   __ _ ___| |__      _ __  _ __ ___ | |_ _| | ___
 # | '_ \ / _` / __| '_ \    | '_ \| '__/ _ \|  _| | |/ _ \
 # | |_) | (_| \__ \ | | |___| |_) | | | (_) | | | | |  __/
 # |_.__/ \__,_|___/_| |_|___| .__/|_|  \___/|_| |_|_|\___|
-#                           | |                           
-#                           |_|                           
+#                           | |
+#                           |_|
+
+# Append stuff to the PATH
+pathadd() {
+    if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
+        PATH="${PATH:+"$PATH:"}$1"
+    fi
+}
 
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
@@ -46,4 +53,13 @@ fi
 
 if [ -f $(brew --prefix)/opt/autoenv/activate.sh ]; then
     . $(brew --prefix)/opt/autoenv/activate.sh
+fi
+
+# Add iTerm integration
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+# Ruby Gems
+
+if which ruby >/dev/null && which gem >/dev/null; then
+    PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
 fi
