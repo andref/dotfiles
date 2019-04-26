@@ -1,5 +1,6 @@
-# Ruby Gems
+# Python
+# ------
+# Configura os executáveis do usuário para o Python 3.7
 
-if which ruby >/dev/null && which gem >/dev/null; then
-    PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
-fi
+pathadd "$HOME/Library/Python/3.7/bin"
+pathadd "$HOME/Library/Python/2.7/bin"
