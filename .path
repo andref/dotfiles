@@ -4,3 +4,11 @@
 
 pathadd "$HOME/Library/Python/3.7/bin"
 pathadd "$HOME/Library/Python/2.7/bin"
+
+# Ruby
+# ----
+# O brew instala o Ruby como keg-only, mas quem disse
+# que eu quero o Ruby arqueológico da Apple?
+
+export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:${PATH}"
+export PATH="/usr/local/opt/ruby/bin:${PATH}"
