@@ -3,7 +3,6 @@
 # Configura os executáveis do usuário para o Python 3.7
 
 pathadd "$HOME/Library/Python/3.7/bin"
-pathadd "$HOME/Library/Python/2.7/bin"
 
 # Ruby
 # ----
