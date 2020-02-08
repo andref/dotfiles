@@ -22,7 +22,7 @@ alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resourc
 # Permite dar sudo nos alias também
 alias sudo='sudo '
 
-# Sublime Text
+# Sublime Text e VS Code
 
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
