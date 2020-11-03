@@ -17,3 +17,8 @@ export PATH="/usr/local/opt/ruby/bin:${PATH}"
 # Conforme configuração do rustup
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# Zig
+# ---
+
+export PATH="$PATH:$HOME/Applications/zig-0.6.0"
